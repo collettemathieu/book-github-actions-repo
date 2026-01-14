@@ -21,6 +21,8 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
 
+      - run: echo ${{ inputs.name.MY_ENV }}
+
       - run: npm install
 
       - run: gulp build
