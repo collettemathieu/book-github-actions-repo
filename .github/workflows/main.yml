@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ main ]
   workflow_dispatch:
+    inputs:
+      name:
+        type: environment
+        description: Choice environment
 
 jobs:
   build:
